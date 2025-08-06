@@ -5,7 +5,7 @@ class Book{
 	final int bookID;
 	static int bookCounter = 1000;
 	final String library_name = "Central Library";
-	public Book(String title, String author, int bookID){
+	public Book(String title, String author){
 		this.title = title;
 		this.author = author;
 		this.bookID = bookCounter++;
@@ -25,8 +25,8 @@ class Book{
 }
 public class book_store {
 	public static void main(String[] args) {
-        Book book1 = new Book("Python Programming", "Jo");
-        Book book2 = new Book("Java Programming", "D");
+        Book book1 = new Book("Python Programming", "SS");
+        Book book2 = new Book("Java Programming", "S");
         Book book3 = new Book("Data Structures", "H");
         book1.displayInfo();
         book2.displayInfo(true); 
